@@ -1,5 +1,5 @@
 /**
- * @file mip-mmtpk 组件
+ * @file mip-mmtpk-script 组件
  * @author cwqiangne@163.com
  */
 
@@ -27,7 +27,7 @@ define(function (require) {
                 var a = $(this);
                 var aid = a.attr('id').replace('like_picture_', '');
                 if (a.attr('disabled') !== 'disabled') {
-                    $.post(window.phpurl + '/digg_ajax.php', 'action=good&id=' + aid);
+                    fetch(window.phpurl + '/digg_ajax.php?action=good&id=' + aid);
                     var n1 = a.find('.num');
                     var n2 = a.parent().prev().find('.num');
                     var num = n1.length === 0 ? n2 : n1;
@@ -117,7 +117,7 @@ define(function (require) {
         if (aid) {
             var now = ele.getAttribute('now');
             if (now === '1') {
-                $.post(window.phpurl + '/count.php', 'aid=' + aid);
+                fetch(window.phpurl + '/count.php?aid=' + aid);
             }
         }
 

@@ -1,18 +1,18 @@
-# mip-mmtpk
+# mip-mmtpk-script
 
-mip-mmtpk 网站自用业务组件
+mip-mmtpk-script 网站自用业务组件
 
 标题|内容
 ----|----
 类型|业务
 支持布局|N/S
-所需脚本|https://mipcache.bdstatic.com/static/v1/mip-mmtpk/mip-mmtpk.js
+所需脚本|https://mipcache.bdstatic.com/extensions/platform/v1/mip-mmtpk-script/mip-mmtpk-script.js
 
 ## 示例
 
 ### 基本用法
 ```html
-<mip-mmtpk phpurl="url" aid="aid" now="num"></mip-mmtpk>
+<mip-mmtpk-script phpurl="url" aid="aid" now="num"></mip-mmtpk-script>
 ```
 
 ## 属性
